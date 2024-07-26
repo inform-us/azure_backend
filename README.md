@@ -16,7 +16,7 @@ Set the `MONGODB_URI` to the URI of where your mongodb instance is deployed.
 
 ## Install packages
 
-`pip install fastapi uvicorn`
+`pip install -r requirements.txt`
 
 ## Start up the backend
 
