@@ -1,11 +1,11 @@
 # azure_backend
 
-A repo for getting a basic backend prototype working in Azure
+A repo for getting a basic backend prototype working in Azure using FastAPI
 
-## install packages
+## requirements
 
-`npm install`
+`pip install fastapi uvicorn`
 
-## start the dev server
+## load up the backend
 
-`npm run dev`
+`uvicorn main:app --reload`
