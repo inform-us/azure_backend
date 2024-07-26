@@ -1,9 +1,14 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from the .env file
+load_dotenv()
 
 app_title = "api"
-allowedOrigins = ["http://localhost:5173"]
+allowedOrigins = os.getenv("ALLOWED_ORIGINS")
 
 app = FastAPI(title=app_title)
 app.add_middleware(
@@ -24,4 +29,4 @@ async def get_data():
 
 if __name__ == "__main__":
     # This allows the FastAPI app to be run locally for development
-    uvicorn.run("main:app", port=5702, reload=True)
+    uvicorn.run("main:app", port=8080, reload=True)
