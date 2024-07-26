@@ -29,4 +29,4 @@ async def get_data():
 
 if __name__ == "__main__":
     # This allows the FastAPI app to be run locally for development
-    uvicorn.run("main:app", port=5702, reload=True)
+    uvicorn.run("main:app", port=8080, reload=True)
