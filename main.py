@@ -1,19 +1,19 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
 
-# Load environment variables from the .env file
-load_dotenv()
+# # Load environment variables from the .env file
+# load_dotenv()
 
 app_title = "api"
-allowedOrigins = os.getenv("ALLOWED_ORIGINS")
+# allowedOrigins = os.getenv("ALLOWED_ORIGINS")
 
 app = FastAPI(title=app_title)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowedOrigins,
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
