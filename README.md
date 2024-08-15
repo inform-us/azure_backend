@@ -20,4 +20,6 @@ Set the `MONGODB_URI` to the URI of where your mongodb instance is deployed.
 
 ## Start up the backend
 
-`uvicorn main:app --reload`
+``` bash
+uvicorn main:app --port <port_same_as_specified_in_frontend> --reload
+```
