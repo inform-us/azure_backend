@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'app-informus-backend-ruaridht'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A585D1DA319D4ECF8CCB664808760C8D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BACKEND }}          
