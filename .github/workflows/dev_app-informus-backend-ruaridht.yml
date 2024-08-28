@@ -8,6 +8,10 @@ on:
   push:
     branches:
       - rmg/backend_ci_cd
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - rmg/backend_ci_cd
   workflow_dispatch:
 
 jobs:
