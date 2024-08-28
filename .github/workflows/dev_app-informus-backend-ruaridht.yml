@@ -7,11 +7,11 @@ name: Build and deploy Python app to Azure Web App - app-informus-backend-ruarid
 on:
   push:
     branches:
-      - rmg/backend_ci_cd
+      - dev
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - rmg/backend_ci_cd
+      - dev
   workflow_dispatch:
 
 jobs:
