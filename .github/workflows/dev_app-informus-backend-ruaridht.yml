@@ -8,6 +8,10 @@ on:
   push:
     branches:
       - dev
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - dev
   workflow_dispatch:
 
 jobs:
